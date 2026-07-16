@@ -222,6 +222,9 @@ st.title("Double Pendulum Simulation")
 "This simulation assumes that each pendulum is made of a rigid, massless rod and a point mass at the bottom edge of the rod."
 "Every frame, the physics is recalculated based on the changes in angle, angular velocity and angular acceleration."
 "A double pendulum's angular accelerations at any point in time is calculated through the simultaneous equations: "
+st.latex(r"(m_1+m_2)L_1\ddot\theta_1 + m_2 L_2\ddot\theta_2\cos\Delta + m_2 L_2\dot\theta_2^{\,2}\sin\Delta + (m_1+m_2)g\sin\theta_1 = 0")
+st.latex(r"L_2\ddot\theta_2 + L_1\ddot\theta_1\cos\Delta - L_1\dot\theta_1^{\,2}\sin\Delta + g\sin\theta_2 = 0")
+st.latex(r"\Delta = \theta_1 - \theta_2")
 ""
 ""
 pendulum_pair_creator = st.columns(2)
